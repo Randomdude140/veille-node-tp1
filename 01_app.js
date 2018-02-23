@@ -77,8 +77,7 @@ app.get('/peupler',function(req,res) {
 
 app.get('/vider',function(req,res) {
 	db.collection('adresse').drop()
-		res.redirect('/list')
-	})
+    res.redirect('/list')
 })
     
 app.get('/detruire/:id', (req, res) => {

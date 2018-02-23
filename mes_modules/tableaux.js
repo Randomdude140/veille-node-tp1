@@ -34,3 +34,22 @@ const tabTele [
     "486-485-6295",
     "514-697-5824"
 ]
+
+const tabEmail [
+    "caitlin@kate.com",
+    "kaytelan@kate,com",
+    "catlin@kate.com",
+    "katelyn@kate.com",
+    "cayetlyn@kate.com",
+    "caitlinn@kate.com",
+    "kateland@kate.com",
+    "kaytelynn@kate.com",
+    "catlyn@kate.com"
+]
+
+const tableau {
+    tabNom : tabNom,
+    tabPrenom : tabPrenom,
+    tabTele : tabTele,
+    tabEmail : tabEmail
+}

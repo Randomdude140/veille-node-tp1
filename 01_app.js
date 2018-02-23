@@ -68,7 +68,7 @@ app.get('/trier/:cle/:ordre', (req, res) => {
 })
 
 app.get('/peupler',function(req,res) {
-	db.collection('adresse').insertMany(peupler(), (err, result) => {
+	db.collection('adresse').insertMany([peupler(), peupler(), peupler(), peupler(), peupler(), peupler(), peupler(), peupler(), peupler()], (err, result) => {
 		if (err) return console.log(err)
 		console.log('sauvegarder dans la BD')
 		res.redirect('/list')

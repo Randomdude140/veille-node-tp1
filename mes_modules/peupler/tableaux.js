@@ -1,5 +1,5 @@
 "use strict";
-const tabNom [
+const tabNom = [
     "1",
     "2",
     "3",
@@ -11,7 +11,7 @@ const tabNom [
     "9"
 ]
 
-const tabPrenom [
+const tabPrenom = [
     "Caitlin",
     "Kaytelan",
     "Catlin",
@@ -23,7 +23,7 @@ const tabPrenom [
     "Catlyn"
 ]
 
-const tabTele [
+const tabTele = [
     "462-641-5945",
     "672-089-4735",
     "568-168-5493",
@@ -35,7 +35,7 @@ const tabTele [
     "514-697-5824"
 ]
 
-const tabEmail [
+const tabEmail = [
     "caitlin@kate.com",
     "kaytelan@kate,com",
     "catlin@kate.com",
@@ -47,9 +47,11 @@ const tabEmail [
     "catlyn@kate.com"
 ]
 
-const tableau {
+const tableau = {
     tabNom : tabNom,
     tabPrenom : tabPrenom,
     tabTele : tabTele,
     tabEmail : tabEmail
 }
+
+module.exports = tableau

@@ -57,8 +57,17 @@ app.post('/modifier', (req, res) => {
  })
 })
 
+app.get('/trier/:cle/:ordre', (req, res) => {
+	let cle = req.params.cle
+	let ordre = (req.params.ordre == 'asc' ? 1 : -1)
+	let cursor = db.collection('adresse').find().sort(cle,ordre).toArray(function(err, resultat) {
+		ordre = (req.params.ordre == "asc" ? "desc" : "asc")
+		res.render('adresse.ejs', {adresse: resultat, cle, ordre})
+	})
+})
 
 
+    
 app.get('/detruire/:id', (req, res) => {
     console.log('route detruire')
  var id = ObjectID(req.params.id)

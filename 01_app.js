@@ -74,6 +74,12 @@ app.get('/peupler',function(req,res) {
 		res.redirect('/list')
 	})
 })
+
+app.get('/vider',function(req,res) {
+	db.collection('adresse').drop()
+		res.redirect('/list')
+	})
+})
     
 app.get('/detruire/:id', (req, res) => {
     console.log('route detruire')

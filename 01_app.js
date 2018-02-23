@@ -6,6 +6,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs'); // générateur de template
 const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectID;
+const peupler = require("./mes_modules/peupler");
 const util = require("util");
 const bodyParser= require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
